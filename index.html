@@ -4,12 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Robux</title>
+  <link href="style.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      background-color: #000;
-      color: white;
+      background-color: #000; /* Optional: Background color */
+      color: white; /* Optional: Text color */
     }
     footer {
       margin-top: 20px;
@@ -17,38 +18,24 @@
   </style>
 </head>
 <body>
-  <h1>Free Robux Generator</h1>
-  <form>
-    <input type="text" id="username" placeholder="Enter Roblox Username" required>
-    <input type="number" id="amount" placeholder="Amount of Robux" required>
-    <button id="submitButton" type="button">Generate Robux</button>
-  </form>
+  <a href="https://free-robux-theta.vercel.app">Click here if not redirected</a>
   <footer>
     <p>This page will redirect in <span id="countdown">5</span> seconds...</p>
     <p>Created by EndlessRockets</p>
   </footer>
-
   <script>
-    // Function to start the countdown and redirect
-    function startRedirect() {
-      let countdown = 5;
-      const countdownElement = document.getElementById('countdown');
+    // Countdown and redirect after 5 seconds
+    let countdown = 5;
+    const countdownElement = document.getElementById('countdown');
+
+    const interval = setInterval(function() {
       countdownElement.innerText = countdown;
-
-      const interval = setInterval(function() {
-        countdown--;
-        countdownElement.innerText = countdown;
-        if (countdown < 0) {
-          clearInterval(interval);
-          window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; // Rick Roll link
-        }
-      }, 1000);
-    }
-
-    // Trigger redirect when button is clicked
-    document.getElementById('submitButton').addEventListener('click', function() {
-      startRedirect();
-    });
+      countdown--;
+      if (countdown < 0) {
+        clearInterval(interval);
+        window.location.href = "https://free-robux-theta.vercel.app";
+      }
+    }, 1000);
   </script>
 </body>
 </html>
