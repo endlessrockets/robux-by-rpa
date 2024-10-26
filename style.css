@@ -1,0 +1,72 @@
+/* Basic reset for consistent styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Font style */
+    background: radial-gradient(circle, #001133, #000000); /* Space-themed background */
+    color: #ffffff; /* White text color */
+    line-height: 1.6; /* Spacing between lines */
+    padding: 20px; /* Padding around the body */
+    position: relative; /* For absolute positioning of stars */
+    overflow: hidden; /* Prevent overflow of stars */
+}
+
+.container {
+    max-width: 600px; /* Maximum width of the content */
+    margin: auto; /* Center the container */
+    padding: 30px; /* Padding inside the container */
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for content */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    backdrop-filter: blur(5px); /* Blur effect for background */
+}
+
+h1 {
+    color: #00ccff; /* Light blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 36px; /* Increase heading size */
+}
+
+p {
+    margin-bottom: 15px; /* Space below paragraphs */
+    font-size: 18px; /* Increase paragraph size */
+}
+
+a {
+    color: #ffcc00; /* Yellow color for links */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold link */
+    font-size: 18px; /* Increase link size */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+    margin-top: 40px; /* Space above footer */
+    font-size: 16px; /* Footer text size */
+    color: #cccccc; /* Light gray color for footer */
+}
+
+/* Adding stars effect */
+.star {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 1.5s infinite alternate; /* Twinkle animation */
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
